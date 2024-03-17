@@ -24,11 +24,11 @@ Recognizing this gap in practice, there is a need for a tool that can predict th
 
 The empirical investigation into the relationship between code quality anti-patterns and mutaion scores for Python projects builds upon a rich body of literature within software engineering, particularly in the omains of code quality assessment, mutation testing, and maching learning. This section provides an overview of key studies and findings that contextualize the current research project and highlighs its significance within the broader academic discourse.
 
+Code quality assessment has long been a focus of research within software engineering, with academic scholars exploring various metrics and techniques to evaluate software code. [Jia, Y., & Harman, M. (2011)](https://ieeexplore.ieee.org/abstract/document/5487526)conducted an extensive analysis and survey of the development of mutation testing, contributing a comprehensive set of approaches and tools to mutation testing. Their work laid the groundwork for ongoing research in mutation testing methodologies.
+
 [Zhu2021.pdf](https://www.sciencedirect.com/science/article/pii/S0164121220302545)
 
 [Van-Nho Do, Quang-Vu Nguyen & Thanh-Binh Nguyen (2023)](https://www.tandfonline.com/doi/full/10.1080/24751839.2023.2252186)
-
-[Jia, Y., & Harman, M. (2011)](https://ieeexplore.ieee.org/abstract/document/5487526)
 
 [Davide Spadini, Palomba, F., Zaidman, A., Magiel Bruntink, & Bacchelli, A. (2018)‌](https://ieeexplore.ieee.org/abstract/document/8529832)
 
