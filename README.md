@@ -28,7 +28,7 @@ Code quality assessment has long been a focus of research within software engine
 
 [Davide Spadini, Palomba, F., Zaidman, A., Magiel Bruntink, & Bacchelli, A. (2018)‌](https://ieeexplore.ieee.org/abstract/document/8529832) examined the relationship between test smells and software code quality, emphasizing the impact of code smells on program maintainability and reliability. Building upon this work, [Virginio et al.(2019)](https://dl.acm.org/doi/abs/10.1145/3350768.3350775) investigated the influence of test smells on test coverage, revealing insights into the inerplay between code quality issues and test effectiveness. These studies underscore the importance of identifying and addressing code quality anti-patterns to enhance overall software quality.
 
-[Zhu2021.pdf](https://www.sciencedirect.com/science/article/pii/S0164121220302545)
+[Zhu et al.(2021)](https://www.sciencedirect.com/science/article/pii/S0164121220302545) conducted an exploratory study on the impact of code observability on mutation testing, highlighting the significance of code visibility on mutation testing, highlighting the significance of code visibility in detecting faults through mutation testing. Their findings offer valuatble insights into the factores influencing mutation score outcomes and the effectiveness of mutation testing techniques. 
 
 [Van-Nho Do, Quang-Vu Nguyen & Thanh-Binh Nguyen (2023)](https://www.tandfonline.com/doi/full/10.1080/24751839.2023.2252186)
 
