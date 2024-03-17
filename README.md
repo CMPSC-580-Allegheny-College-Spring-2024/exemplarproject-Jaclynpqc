@@ -14,11 +14,13 @@ This repository contains student project materials, including project report, da
 ## Project Name: SEERS: Empirically Studying the Relationship between Code Quality Aniti-Patterns and Mutation Score for Python Projects
 
 ---
+
 ## Overview
 
-When software engineers work on developing a new software or incorporate new functions into a program, they often lack the certainty of testing that function. Additionally, the unpredictability of whether test ases effectively assess the program's correctness poses a challenge. Mutation testing is a systematic approach involving the intentional introduction of defects into a program, followed by multiple runs of the test suits. If the test suite fails to identify seeded defects, it indicates ineffectiveness. However, despite its informativeness, mutation testing is computationally expensive, leading to the limitation of effective test suite.
+Software testing is a critical aspect of software development, yet the effectiveness of test suites in ensuring program correctness remains uncertain. Mutation testing offers a systematic approach to evaluating test suite effectiveness by intentionally introducing defects into a program and assessing whether tests detect these faults.However, despite its informativeness, mutation testing is computationally expensive, leading to the limitation of effective test suite.
 
-Recognizing this gap in practice, there is a need for a tool that can predict the likely mutation score soon after implementing a test case for a function. This project aims to empirically investigate the relationship between code quality anti-patterns and mutation scores in programs implemented in the Python programming language.
+This research project addresses the challenge of enhancing mutation testing efficiency by investigating the relationship between code quality anti-patterns and muation scores in Python programs. By analyzing how specific coding practices impact kmutation scores, this study aims to develop predictive models that anticipate mutation scores shortly after test case implementation. Such models promise to streamline software testing processes, providing early insights into test suite effectiveness and guiding developers in prioritizing testing efforts.
+This project aims to empirically investigate the relationship between code quality anti-patterns and mutation scores in programs implemented in the Python programming language. Ultimately the findings of this study have the potential to revolutionize software testing methodologies, enabling more efficient and reliable assessment of program correctness in Python projects.
 
 ## Literature Review
 
