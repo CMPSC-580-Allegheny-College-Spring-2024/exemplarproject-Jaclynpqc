@@ -40,8 +40,11 @@ TODO: Discuss the methods of the project to be able to answer the `how` question
 
 ### Subject Program Selection
 
-Python programs meeting the following criteria were selected from Github repositories: Python 3.11 or higher, dependency management using poetry, test automation with Pytest, comptible with static analysis tools ([Chasten](https://github.com/AstuteSource/chasten/tree/master) and/or [Symbex](https://github.com/simonw/symbex)) and mutation testing tools ([Mutmut](https://github.com/boxed/mutmut) or [Mutatest](https://github.com/EvanKepner/mutatest))
+Python programs meeting the following criteria were selected from Github repositories: (i)Python 3.11 or higher, (ii)dependency management using poetry, (iii)test automation with Pytest, (iv)compatible with static analysis tools ([Chasten](https://github.com/AstuteSource/chasten/tree/master) and/or [Symbex](https://github.com/simonw/symbex)) and mutation testing tools ([Mutmut](https://github.com/boxed/mutmut) or [Mutatest](https://github.com/EvanKepner/mutatest)).
 
+### Detection of Code Quality Anti-Pattern and Mutation testing
+
+A custom program, referred to as `analyzer`, was developed within [SEERS](https://github.com/AstuteSource/SEERS), to execute static analysis tools, notably `Chasten` and mutation tool `Mutmut` on the selected subject programs (we tested this program significantly on [lazytracker](https://github.com/AstuteSource/lazytracker))
 
 
 ## Using the Artifact
