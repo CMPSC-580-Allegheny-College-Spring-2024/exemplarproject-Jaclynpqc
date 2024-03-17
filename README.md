@@ -33,23 +33,16 @@ Code quality assessment has long been a focus of research within software engine
 [Zhu et al.(2021)](https://www.sciencedirect.com/science/article/pii/S0164121220302545) conducted an exploratory study on the impact of code observability on mutation testing, highlighting the significance of code visibility on mutation testing, highlighting the significance of code visibility in detecting faults through mutation testing. Their findings offer valuatble insights into the factores influencing mutation score outcomes and the effectiveness of mutation testing techniques.
 
 The research by [Van-Nho Do, Quang-Vu Nguyen & Thanh-Binh Nguyen (2023)](https://www.tandfonline.com/doi/full/10.1080/24751839.2023.2252186) addresses the challenge of predicting mutation scores without the need for extensive mutation eesting, emphasizing the potential for predictive modeling to streamline the testing process. Their work aligns closely with the objectives of the current research project, demonstrating the growing interest in leveraging machine learning techniques for mutation score predictions.
-
-
+s
 ## Methods
 
 TODO: Discuss the methods of the project to be able to answer the `how` question (`how was this project completed?`). The methods section in an academic research outlines the specific procedures, techniques, and methodologies employed to conduct the study, offering a transparent and replicable framework for the research. It details the resources behind the work, in terms of, for example, the design of the algorithm and the experiment(s), data collection methods, applied software libraries, required tools, the types of statistical analyses and models which are applied to ensure the rigor and validity of the study. This section provides clarity for other researchers to understand and potentially replicate the study, contributing to the overall reliability and credibility of the research findings.
 
-(modify this)
-Basically, the mutation testing process is started when the programme under test is confirmed to be bug-free, through execution on the test suite which has been built specifically for that programme. And then , the mutation testin process has the following three main steps:
+### Subject Program Selection
 
-* Step 1: Proceed to generate mutants, which are variations of the origina programmer. Each of these variants has one modification or multiple modifications from the original programme
-* Step 2: Execcute, in turn, the original programe and all its mutats against a given set of test cases. The computational cost of mutation testing is very high due to the executions in this step.
-* Step 3: Calculate the mutation score (MS or MSI) and then evaluate the quality of the given set of test cases based on the mutation score. The mutation score value lies from 0 to 1. A mutation score of 1 is ideal, meaning that all changing in the original programme are detected.
+Python programs meeting the following criteria were selected from Github repositories: Python 3.11 or higher, dependency management using poetry, test automation with Pytest, comptible with static analysis tools ([Chasten](https://github.com/AstuteSource/chasten/tree/master) and/or [Symbex](https://github.com/simonw/symbex)) and mutation testing tools ([Mutmut](https://github.com/boxed/mutmut) or [Mutatest](https://github.com/EvanKepner/mutatest))
 
-In this paper [Van-Nho Do, Quang-Vu Nguyen & Thanh-Binh Nguyen (2023)](https://www.tandfonline.com/doi/full/10.1080/24751839.2023.2252186), they propose the research problem as to how can calculate (predict the mutation score) without performing the above-mentioned second step. This will lead to a reduction in execution time and computational cost but still ensure the effectiveness of mutation testing as expected.
 
-The study use Mutpy for mutation testing for software written in Python langauge. Besides, Scikit-learn library is aslo used in the experiement since it is considered as the most powerful library for machine learning algorithms written by Python progrmaming language.
-In the experiment, they used the following algorithms to train the model and predict which mutants will be killed. Logistic Regression algoritm, Random Forest, XGBoost, LightGBM
 
 ## Using the Artifact
 
