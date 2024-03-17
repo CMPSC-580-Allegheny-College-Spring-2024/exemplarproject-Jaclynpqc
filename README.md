@@ -3,8 +3,6 @@
 
 ## Semester: Spring 2024
 
-This repository contains student project materials, including project report, data, code, and references to literature for this departmentally-sponsored project. __As you complete each of the below sections in this document, please be sure to remove the preamble text so that it does not appear in your work.__ Please work with your first reader to answer any questions or concerns that you may have.
-
 ## GitHub Handle: jaclynpqc
 
 ## Name: Jaclyn Pham
@@ -36,8 +34,6 @@ The research by [Van-Nho Do, Quang-Vu Nguyen & Thanh-Binh Nguyen (2023)](https:/
 
 ## Methods
 
-TODO: Discuss the methods of the project to be able to answer the `how` question (`how was this project completed?`). The methods section in an academic research outlines the specific procedures, techniques, and methodologies employed to conduct the study, offering a transparent and replicable framework for the research. It details the resources behind the work, in terms of, for example, the design of the algorithm and the experiment(s), data collection methods, applied software libraries, required tools, the types of statistical analyses and models which are applied to ensure the rigor and validity of the study. This section provides clarity for other researchers to understand and potentially replicate the study, contributing to the overall reliability and credibility of the research findings.
-
 ### Subject Program Selection
 
 Python programs meeting the following criteria were selected from Github repositories: (i)Python 3.11 or higher, (ii)dependency management using poetry, (iii)test automation with Pytest, (iv)compatible with static analysis tools ([Chasten](https://github.com/AstuteSource/chasten/tree/master) and/or [Symbex](https://github.com/simonw/symbex)) and mutation testing tools ([Mutmut](https://github.com/boxed/mutmut) or [Mutatest](https://github.com/EvanKepner/mutatest)).
@@ -57,9 +53,7 @@ The unified dataset facilitated the calculation of statistical correlations, par
 
 ### Machine Learning Model Training and Evalutation
 
-While the statistical correlation provided initial insights, the subsequent step involved training and evaluating maching learning models to predict mutation scores based on code quality anti-patterns. H
-
-
+While the statistical correlation provided initial insights, the subsequent step involved training and evaluating maching learning models to predict mutation scores based on code quality anti-patterns. However, due to time constraints, this step could not be sompleted within the timeframe of the research project. Future iterations of the study involve leveraging automated maching learning (AutoML) framewords and implementing k-fold cross-validation techniques to assess model accuracy, precision, and effectiveness using metrics such as the F1-score and Matthews correlation coefficient(MCC).
 
 ## Using the Artifact
 
