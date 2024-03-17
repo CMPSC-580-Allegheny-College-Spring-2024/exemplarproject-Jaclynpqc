@@ -5,29 +5,49 @@
 
 This repository contains student project materials, including project report, data, code, and references to literature for this departmentally-sponsored project. __As you complete each of the below sections in this document, please be sure to remove the preamble text so that it does not appear in your work.__ Please work with your first reader to answer any questions or concerns that you may have.
 
-## GitHub Handle: Add Your Name Here
+## GitHub Handle: jaclynpqc
 
-## Name: Add Your Name Here
+## Name: Jaclyn Pham
 
-## Major: TODO (choose: CS, DS, INFM, SE)
+## Major: Software Engineering
 
-## Project Name: Enter The Name Of Your Project
-
-Here, think of an interesting name of the work that bring a freshness and excitement to the area of this project. Consider using a name that carries some information about what the project and provides some hint at what the project does without being too wordy.
+## Project Name: SEERS: Empirically Studying the Relationship between Code Quality Aniti-Patterns and Mutation Score for Python Projects
 
 ---
-
 ## Overview
 
-TODO (250 words minimum): Discuss the overview of the project using and building on the project description provided by the department. In this section, a concise summary is discussed of the study's key elements, offering the reader a quick understanding of the research's scope and goals. The section continues to outline the main topics, research questions, hypotheses, and /or theories in a clear and meaningful language to provide a type of roadmap for the reader to navigate the forthcoming details of the project. This section also needs to motivate the project by providing context for the study, outlining the current state of knowledge in the field, and highlighting any gaps or limitations in existing research. The section serves as a foundational guide that enables the reader to grasp the context of the study, in addition to its structure, before moving into a more technically-based discussion in the following sections of the article. In short, the "Overview" section needs to answer the `what` and `why` questions, that is `what is the project?` and `why is the project important?`
+When software engineers work on developing a new software or incorporate new functions into a program, they often lack the certainty of testing that function. Additionally, the unpredictability of whether test ases effectively assess the program's correctness poses a challenge. Mutation testing is a systematic approach involving the intentional introduction of defects into a program, followed by multiple runs of the test suits. If the test suite fails to identify seeded defects, it indicates ineffectiveness. However, despite its informativeness, mutation testing is computationally expensive, leading to the limitation of effective test suite.
+
+Recognizing this gap in practice, there is a need for a tool that can predict the likely mutation score soon after implementing a test case for a function. This project aims to empirically investigate the relationship between code quality anti-patterns and mutation scores in programs implemented in the Python programming language.
 
 ## Literature Review
 
-TODO: Conduct literature review by describing relevant work related to the project and hence providing an overview of the state of the art in the area of the project. This section serves to contextualize the study within the existing body of literature, presenting a thorough review of relevant prior research and scholarly contributions. In clear and meaningful language, this section aims to demonstrate the problems, gaps, controversies, or unanswered questions that are associated with the current understanding of the topic. In addition, this section serves to highlight the current study's unique contribution to the field. By summarizing and critiquing existing works, this section provides a foundation for readers to appreciate the novelty and significance of the study in relation to the broader academic discourse. The "Literature Review" section further contributes to the `why is the project important?` question. The number of scholarly work included in the literature review may vary depending on the project.
+[Zhu2021.pdf](https://www.sciencedirect.com/science/article/pii/S0164121220302545)
+
+[Van-Nho Do, Quang-Vu Nguyen & Thanh-Binh Nguyen (2023)](https://www.tandfonline.com/doi/full/10.1080/24751839.2023.2252186)
+
+[Jia, Y., & Harman, M. (2011)](https://ieeexplore.ieee.org/abstract/document/5487526)
+
+[Davide Spadini, Palomba, F., Zaidman, A., Magiel Bruntink, & Bacchelli, A. (2018)‌](https://ieeexplore.ieee.org/abstract/document/8529832)
+
+[Virginio(2019)](https://dl.acm.org/doi/abs/10.1145/3350768.3350775)
+
 
 ## Methods
 
 TODO: Discuss the methods of the project to be able to answer the `how` question (`how was this project completed?`). The methods section in an academic research outlines the specific procedures, techniques, and methodologies employed to conduct the study, offering a transparent and replicable framework for the research. It details the resources behind the work, in terms of, for example, the design of the algorithm and the experiment(s), data collection methods, applied software libraries, required tools, the types of statistical analyses and models which are applied to ensure the rigor and validity of the study. This section provides clarity for other researchers to understand and potentially replicate the study, contributing to the overall reliability and credibility of the research findings.
+
+(modify this)
+Basically, the mutation testing process is started when the programme under test is confirmed to be bug-free, through execution on the test suite which has been built specifically for that programme. And then , the mutation testin process has the following three main steps:
+
+* Step 1: Proceed to generate mutants, which are variations of the origina programmer. Each of these variants has one modification or multiple modifications from the original programme
+* Step 2: Execcute, in turn, the original programe and all its mutats against a given set of test cases. The computational cost of mutation testing is very high due to the executions in this step.
+* Step 3: Calculate the mutation score (MS or MSI) and then evaluate the quality of the given set of test cases based on the mutation score. The mutation score value lies from 0 to 1. A mutation score of 1 is ideal, meaning that all changing in the original programme are detected.
+
+In this paper [Van-Nho Do, Quang-Vu Nguyen & Thanh-Binh Nguyen (2023)](https://www.tandfonline.com/doi/full/10.1080/24751839.2023.2252186), they propose the research problem as to how can calculate (predict the mutation score) without performing the above-mentioned second step. This will lead to a reduction in execution time and computational cost but still ensure the effectiveness of mutation testing as expected.
+
+The study use Mutpy for mutation testing for software written in Python langauge. Besides, Scikit-learn library is aslo used in the experiement since it is considered as the most powerful library for machine learning algorithms written by Python progrmaming language.
+In the experiment, they used the following algorithms to train the model and predict which mutants will be killed. Logistic Regression algoritm, Random Forest, XGBoost, LightGBM
 
 ## Using the Artifact
 
