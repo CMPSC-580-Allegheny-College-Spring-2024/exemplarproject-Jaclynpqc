@@ -26,13 +26,11 @@ The empirical investigation into the relationship between code quality anti-patt
 
 Code quality assessment has long been a focus of research within software engineering, with academic scholars exploring various metrics and techniques to evaluate software code. [Jia, Y., & Harman, M. (2011)](https://ieeexplore.ieee.org/abstract/document/5487526)conducted an extensive analysis and survey of the development of mutation testing, contributing a comprehensive set of approaches and tools to mutation testing. Their work laid the groundwork for ongoing research in mutation testing methodologies.
 
+[Davide Spadini, Palomba, F., Zaidman, A., Magiel Bruntink, & Bacchelli, A. (2018)‌](https://ieeexplore.ieee.org/abstract/document/8529832) examined the relationship between test smells and software code quality, emphasizing the impact of code smells on program maintainability and reliability. Building upon this work, [Virginio et al.(2019)](https://dl.acm.org/doi/abs/10.1145/3350768.3350775)
+
 [Zhu2021.pdf](https://www.sciencedirect.com/science/article/pii/S0164121220302545)
 
 [Van-Nho Do, Quang-Vu Nguyen & Thanh-Binh Nguyen (2023)](https://www.tandfonline.com/doi/full/10.1080/24751839.2023.2252186)
-
-[Davide Spadini, Palomba, F., Zaidman, A., Magiel Bruntink, & Bacchelli, A. (2018)‌](https://ieeexplore.ieee.org/abstract/document/8529832)
-
-[Virginio(2019)](https://dl.acm.org/doi/abs/10.1145/3350768.3350775)
 
 
 ## Methods
