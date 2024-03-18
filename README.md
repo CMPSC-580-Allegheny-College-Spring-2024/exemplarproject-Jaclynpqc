@@ -83,8 +83,6 @@ poetry run analyzer --search-path demo --save-directory subject-data --chasten-c
 
 Replace the options --search-path, --save-directory, and --chasten-config-path with the desired paths where the project will be searched, files will be saved, and configuration files will be located, respectively. These should be Path objects passed in a manner similar to the example command provided above.
 
-## Results and Outcomes
-
 Once the analysis and unfication complete, the following message will pop up
 
 ```script
@@ -93,9 +91,64 @@ Result is stored in file named combined_result.json
 🧹 Final sweeping, saved to new_output_with_functions.json
 ```
 
+## Results and Outcomes
+
 The complete data exists in `new_output_with_functions.json`
 
-- Now, you can scan the ouput to confirm that, for instance, the mutation score for pattern named `add_files` that was inserted 3 mutants (01 survived, 02 killed) has a mutation score of 0.3333333333333333.
+The user can scan the ouput to confirm that, for instance, the mutation score for pattern named `add_files` that was inserted 3 mutants (01 survived, 02 killed) has a mutation score of roughly 66.6/100. This calculation is based on the formula `mutation_score = killed_mutants/total_mutants(both killed and survived) * 100`
+
+```json
+{
+    "file": "/Users/jaclynpham/AstuteSource/SEERS/scripts/analyzer/demo/lazytracker/lazytracker/lazytracker.py",
+    "pattern": {
+      "lineno": 29,
+      "coloffset": 4,
+      "linematch": "def add_files(self, filepaths: List[str], chunk_num_blocks=128):",
+      "context": "        files_to_check = sorted(files_to_check)\n\n        self.add_files(files_to_check, chunk_num_blocks)\n\n    def add_files(self, filepaths: List[str], chunk_num_blocks=128):\n        \"\"\"Include hash of files\n\n        Args:\n            filepaths (List[str]): List of paths to files\n            chunk_num_blocks (int, optional): How many chunks to read at once. Defaults to 128.",
+      "min": 1,
+      "max": 10,
+      "pattern": ".//FunctionDef",
+      "check_id": "F001",
+      "check_name": "all-function-definition",
+      "description": "Ensure the presence of function definitions in the codebase."
+    },
+    "function_name": "add_files",
+    "function_scope": "29-42",
+    "mutants": [
+      {
+        "name": "Mutant #6",
+        "line": 29,
+        "description": [
+          "    def add_files(self, filepaths: List[str], chunk_num_blocks=128):"
+        ],
+        "failure": [
+          {
+            "inner": "--- lazytracker/lazytracker.py\n+++ lazytracker/lazytracker.py\n@@ -26,7 +26,7 @@\n \n         self.add_files(files_to_check, chunk_num_blocks)\n \n-    def add_files(self, filepaths: List[str], chunk_num_blocks=128):\n+    def add_files(self, filepaths: List[str], chunk_num_blocks=129):\n         \"\"\"Include hash of files\n \n         Args:\n",
+            "type": "failure",
+            "message": "bad_survived"
+          }
+        ]
+      },
+      {
+        "name": "Mutant #7",
+        "line": 38,
+        "description": [
+          "                with open(p, \"rb\") as f:"
+        ],
+        "failure": []
+      },
+      {
+        "name": "Mutant #8",
+        "line": 39,
+        "description": [
+          "                    while chunk := f.read(chunk_num_blocks * self._hasher.block_size):"
+        ],
+        "failure": []
+      }
+    ],
+    "mutation_score": 66.66666666666666
+}
+```
 
 ---
 
