@@ -1,4 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/Y4rZMh1t)
+
 # Junior Seminar (CMPSC 580) Exemplar Project Repository
 
 ## Semester: Spring 2024
@@ -9,7 +10,7 @@
 
 ## Major: Software Engineering
 
-## Project Name: SEERS: Empirically Studying the Relationship between Code Quality Aniti-Patterns and Mutation Score for Python Projects
+## Project Name: COMMA (Chasten Output Mutmut Mutation Analysis)
 
 ---
 
@@ -148,6 +149,18 @@ The user can scan the ouput to confirm that, for instance, the mutation score fo
     ],
     "mutation_score": 66.66666666666666
 }
+```
+
+This json snippet demonstrates the analysis from running `comma` on the file `lazytracker/lazytracker.py`, detecting the function name `add_files` that exist on function scope `29-42`. Mutants #6,#7,#8 were inserted in this function and one of them failed, raising this message:
+
+```json
+"failure": [
+          {
+            "inner": "--- lazytracker/lazytracker.py\n+++ lazytracker/lazytracker.py\n@@ -26,7 +26,7 @@\n \n         self.add_files(files_to_check, chunk_num_blocks)\n \n-    def add_files(self, filepaths: List[str], chunk_num_blocks=128):\n+    def add_files(self, filepaths: List[str], chunk_num_blocks=129):\n         \"\"\"Include hash of files\n \n         Args:\n",
+            "type": "failure",
+            "message": "bad_survived"
+          }
+        ]
 ```
 
 ---
