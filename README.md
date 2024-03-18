@@ -9,7 +9,7 @@
 
 ## Major: Software Engineering
 
-## Project Name: SEERS: Empirically Studying the Relationship between Code Quality Aniti-Patterns and Mutation Score for Python Projects
+## Project Name: COMMA: Chasten Output Mutmut Mutation Analysis
 
 ---
 
