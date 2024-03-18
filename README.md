@@ -49,7 +49,7 @@ Following the execution of the `analyzer` program, the output data from `Chasten
 
 ### Calculation of Statistical Correlations
 
-The unified dataset facilitated the calculation of statistical correlations, particularly at the function level, between the count of detected code quality anti-patterns and the corresponding mutation scores. Utilizing methodologies outlined in `Zhu et al.(2021)`, correlation coefficients such as Spearman's rank correlation coefficient were computed and integrated into the unified dataset for further analysis. 
+The unified dataset facilitated the calculation of statistical correlations, particularly at the function level, between the count of detected code quality anti-patterns and the corresponding mutation scores. Utilizing methodologies outlined in `Zhu et al.(2021)`, correlation coefficients such as Spearman's rank correlation coefficient were computed and integrated into the unified dataset for further analysis.
 
 ### Machine Learning Model Training and Evalutation
 
@@ -59,14 +59,14 @@ While the statistical correlation provided initial insights, the subsequent step
 
 The guide to installation and using this program exist on [SEERS/README.md](https://github.com/AstuteSource/SEERS).
 
-### Installation
+**Installation**
 
 Follow these steps to install the `chasten` program:
 
 - Install Python 3.11 for your operating system
 - Clone this repository:  `git@github.com:AstuteSource/SEERS.git`
 
-### Analysis
+**Analysis**
 
 To analyze code using Comma:
 
