@@ -10,11 +10,7 @@
 
 ## Major: Software Engineering
 
-<<<<<<< HEAD
-## Project Name: COMMA (Chasten Output Mutmut Mutation Analysis)
-=======
 ## Project Name: COMMA: Chasten Output Mutmut Mutation Analysis
->>>>>>> d7281d3ac3919b6268719e7898554f9a7e97d871
 
 ---
 
